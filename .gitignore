@@ -1,0 +1,43 @@
+# Environment variables — NEVER commit API keys
+.env
+*.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+
+# Node (if you add any tooling later)
+node_modules/
+
+# Chrome extension build artifacts (if any)
+*.crx
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Model artifacts (if large)
+models/*.pkl
+
+# Logs
+*.log
+
+files that are for testing purposes only and should not be committed
+demo.html
+prompt_text.py
+promptrobot.txt

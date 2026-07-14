@@ -1,0 +1,69 @@
+<svg width="44" height="38" viewBox="0 0 44 38" xmlns="http://www.w3.org/2000/svg" class="kiro-svg kiro-observe">
+  <style>
+    .kiro-observe .bm-head {
+      animation: bm-tilt 4s ease-in-out infinite;
+      transform-origin: 22px 34px;
+    }
+    @keyframes bm-tilt {
+      0%, 100% { transform: rotate(0deg); }
+      25%      { transform: rotate(-4deg); }
+      60%      { transform: rotate(3deg); }
+      80%      { transform: rotate(0deg); }
+    }
+    .kiro-observe .bm-eyes {
+      animation: bm-blink 3.6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    @keyframes bm-blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      95%           { transform: scaleY(0.1); }
+    }
+    .kiro-observe .bm-alert-line {
+      animation: bm-alert-pulse 2s ease-in-out infinite;
+    }
+    .kiro-observe .bm-alert-line:nth-child(2) { animation-delay: 0.15s; }
+    .kiro-observe .bm-alert-line:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes bm-alert-pulse {
+      0%, 100% { opacity: 0.5; }
+      50%      { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .kiro-observe * { animation: none !important; }
+    }
+  </style>
+
+  <!-- Alert lines above head -->
+  <g stroke="#9CA3F5" stroke-width="1.3" stroke-linecap="round">
+    <line class="bm-alert-line" x1="18" y1="5" x2="17.3" y2="1.5"/>
+    <line class="bm-alert-line" x1="22" y1="4" x2="22" y2="0.5"/>
+    <line class="bm-alert-line" x1="26" y1="5" x2="26.7" y2="1.5"/>
+  </g>
+
+  <g class="bm-head">
+    <!-- Body + head silhouette -->
+    <path d="M9 37
+             C7 37 6 35.5 6 33.5
+             V24
+             C6 14.5 13 8 22 8
+             C31 8 38 14.5 38 24
+             V33.5
+             C38 35.5 37 37 35 37
+             Z"
+          fill="#F6F7F9" stroke="#D9DEE5" stroke-width="0.7"/>
+
+    <!-- Wide alert eyes -->
+    <g class="bm-eyes">
+      <circle cx="18.2" cy="18.5" r="1.7" fill="#272B33"/>
+      <circle cx="25.8" cy="18.5" r="1.7" fill="#272B33"/>
+    </g>
+
+    <!-- Small open curious mouth -->
+    <ellipse cx="22" cy="23.3" rx="1.6" ry="1.2" fill="#272B33"/>
+
+    <!-- Hands resting flat on the chat bar edge -->
+    <path d="M6 30c-3 0-5 1.6-5 4.4 0 1.8 1.3 3 3 3s3-1.2 3-3"
+          fill="#F6F7F9" stroke="#D9DEE5" stroke-width="0.7"/>
+    <path d="M38 30c3 0 5 1.6 5 4.4 0 1.8-1.3 3-3 3s-3-1.2-3-3"
+          fill="#F6F7F9" stroke="#D9DEE5" stroke-width="0.7"/>
+  </g>
+</svg>

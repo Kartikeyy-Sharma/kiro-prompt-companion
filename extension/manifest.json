@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Agent — kiro Companion",
+  "version": "1.0.0",
+  "description": "A small AI companion that sits on the chat bar and helps improve your prompts before you send them.",
+
+  "permissions": [],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://grok.com/*",
+        "https://www.perplexity.ai/*"
+      ],
+      "js": ["content.js"],
+      "css": ["card.css"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*.svg"],
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://grok.com/*",
+        "https://www.perplexity.ai/*"
+      ]
+    }
+  ]
+}
