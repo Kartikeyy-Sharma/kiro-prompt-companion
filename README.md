@@ -1,4 +1,8 @@
-# Prompt Agent
+# Kiro - AI Prompt Companion
+
+# Demo
+
+https://github.com/user-attachments/assets/5bded802-a400-47bf-902b-80fb586f8def
 
 A browser extension that improves your prompts before you send them to ChatGPT.
 
@@ -78,8 +82,4 @@ Backend runs on `http://127.0.0.1:8000`.
 
 ## Status
 
-🚧 In active development. Currently working: full pipeline from classification through rewriting on ChatGPT. Claude/Gemini support has selector fallbacks but isn't fully tested yet.
-
-## License
-
-MIT
+Currently working: full pipeline from classification through rewriting on ChatGPT. Claude/Gemini support has selector fallbacks but isn't fully tested yet.
