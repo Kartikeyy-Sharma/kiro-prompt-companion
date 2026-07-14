@@ -82,4 +82,4 @@ Backend runs on `http://127.0.0.1:8000`.
 
 ## Status
 
-Currently working: full pipeline from classification through rewriting on ChatGPT. Claude/Gemini support has selector fallbacks but isn't fully tested yet.
+Currently working: full pipeline from classification through rewriting on ChatGPT.
