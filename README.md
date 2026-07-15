@@ -8,6 +8,78 @@ A browser extension that improves your prompts before you send them to ChatGPT.
 
 An animated companion sits on the chat bar, detects when your prompt could use clarification, asks a few quick questions, and rewrites your prompt with the added context — all before you hit send.
 
+# Before vs After
+
+This example demonstrates how **Kiro** enriches an ambiguous prompt by collecting the missing context before sending it to the LLM.
+
+---
+
+## Original Prompt
+
+```text
+Help me prepare for an interview for the role of Software Developer?
+```
+
+---
+
+## ChatGPT Output (Without Kiro)
+
+The model generates a generic interview preparation guide because important context is missing.
+
+<img width="986" height="782" alt="image" src="https://github.com/user-attachments/assets/d7b4f228-17da-42f2-9b0c-35623ff32b76" />
+
+<img width="1007" height="720" alt="image" src="https://github.com/user-attachments/assets/f9ad58a6-14d2-4558-9be0-f9f6ab517a67" />
+
+
+> *Output shortened for readability.*
+
+---
+
+## Kiro Intervention
+
+Instead of immediately sending the prompt, Kiro asks contextual questions to understand:
+
+- Programming language
+- Experience level
+- Target company
+- Interview focus
+
+<img width="1296" height="751" alt="image" src="https://github.com/user-attachments/assets/789801c1-60d0-4df0-b412-83226fee85d3" />
+
+
+---
+
+## Improved Prompt
+
+After collecting the missing context, Kiro rewrites the prompt into a richer, more specific version.
+
+<img width="1276" height="692" alt="image" src="https://github.com/user-attachments/assets/7f8ccdcd-a075-41e8-9f59-23efaccc1459" />
+
+
+---
+
+## ChatGPT Output (With Kiro)
+
+The response becomes personalized, context-aware, and directly aligned with the user's interview goals.
+
+<img width="1096" height="872" alt="image" src="https://github.com/user-attachments/assets/f07ba632-4b7a-4fe0-89bf-2dc2f80ca339" />
+<img width="1013" height="750" alt="image" src="https://github.com/user-attachments/assets/0fc96a8c-a417-480f-952c-b8dd74423a5b" />
+
+
+> *Output shortened for readability.*
+
+---
+
+## What Changed?
+
+| Without Kiro | With Kiro |
+|--------------|-----------|
+| Generic interview guide | Personalized interview roadmap |
+| No user context | Context gathered before generation |
+| Multiple follow-up prompts required | One enriched prompt |
+| Broad suggestions | Startup + backend-specific guidance |
+
+
 ## How it works
 
 ```
